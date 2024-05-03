@@ -1,0 +1,20 @@
+<!-- 2). -->
+
+
+<html>
+    <body>
+        <p id="demo" style="color:blue">Hello</p>
+        <script>
+            a=20;
+            function add() {
+                document.getElementById("demo").style.fontSize=a + "px";
+                document.getElementById("demo").style.color="red";
+            }
+            setInterval(function() {
+                if(a<=50) {
+                    add(++a)
+                }
+            },500);
+        </script>
+    </body>
+</html>
